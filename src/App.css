@@ -1,0 +1,85 @@
+/* 🌸 Base styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 🔹 Container utama */
+.app {
+  width: 90%;
+  max-width: 900px;
+  background: #ffffffcc;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* 🔸 Navbar cantik */
+.navbar {
+  background-color: #1976d2;
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  margin-left: 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #bbdefb;
+  transform: translateY(-2px);
+}
+
+/* 🧭 Konten halaman */
+.content {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 28px;
+  color: #1976d2;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ✨ Responsif */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    margin: 6px;
+  }
+}
